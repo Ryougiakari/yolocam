@@ -36,10 +36,11 @@ This project provides the code structure and scripts to generate heatmaps on ima
 3.  **Grad-CAM Calculation:** Grad-CAM uses the gradients of the class score (for a detected object) with respect to the feature maps of the target layer. This produces a coarse localization map highlighting important regions for that specific class.
 4.  **Heatmap Generation & Overlay:** The localization map is upscaled to the input image size and overlaid as a heatmap, providing a visual explanation for the detection.
 
-## Next Steps (Usage instructions will be added here)
-*   Downloading a pre-trained YOLOv8 model.
-*   Running the `main.py` script.
-*   Understanding the output.
+## Usage
+
+1. Download a pre-trained YOLOv8 model and place it inside the `models` folder.
+2. Run `python main.py PATH_TO_IMAGE` to generate a heatmap.
+   Use `--output` to change the output path and `--device cuda` for GPU acceleration.
 
 ## Downloading a Pre-trained YOLOv8 Model
 
